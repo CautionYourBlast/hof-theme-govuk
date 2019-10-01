@@ -6,13 +6,13 @@
 }
 
 h1 {
-    @extend .heading-large;
+    @extend .govuk-heading-l;
 }
 h2 {
-    @extend .heading-medium;
+    @extend .govuk-heading-m;
 }
 h3 {
-    @extend .heading-small;
+    @extend .govuk-heading-s;
 }
 strong {
     font-weight: bold;

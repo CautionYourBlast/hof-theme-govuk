@@ -40,7 +40,7 @@
 
 
 .alert-header {
-  @extend .bold-medium;
+  @include govuk-font(24, $weight: bold);
   clear: both;
   margin-bottom: .5em;
   overflow: hidden;
@@ -49,7 +49,7 @@
 
 
 .alert-number {
-  @extend .bold-xlarge;
+  @include govuk-font(48, $weight: bold);
   float: left;
   margin-right: .41666667em; /* 20px ÷ 48px font size */
 }
