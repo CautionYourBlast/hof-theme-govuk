@@ -4,7 +4,7 @@
 
 
 %alert {
-  border-left: 4px solid $error-colour;
+  border-left: 4px solid govuk-colour("red");
   clear: both;
   margin: 0 0 1.05263em;
   padding: 1.05263em;
@@ -13,27 +13,27 @@
 
 .alert-success {
   @extend %alert;
-  border-color: $turquoise;
+  border-color: govuk-colour("turquoise");
 }
 
 
 .alert-info {
   @extend %alert;
-  border-color: $grey-2;
+  border-color: govuk-colour("light-grey");
 }
 
 
 .alert-error {
   @extend %alert;
-  border-color: $error-colour;
+  border-color: govuk-colour("red");
 }
 
 
 .alert-complete {
   @extend %alert;
-  background-color: $turquoise;
-  border-color: $turquoise;
-  color: $white;
+  background-color: govuk-colour("turquoise");
+  border-color: govuk-colour("turquoise");
+  color: govuk-colour("white");
   text-align: center;
   padding: 4.5em 1em;
 }

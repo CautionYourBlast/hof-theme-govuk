@@ -11,9 +11,9 @@
 
 .main {
     @extend %site-width-container;
-    padding-bottom: $gutter;
-    @include media(desktop) {
-        padding-bottom: $gutter*3;
+    padding-bottom: $govuk-gutter;
+    @include govuk-media-query(desktop) {
+        padding-bottom: $govuk-gutter*3;
     }
 }
 
@@ -42,7 +42,7 @@
 }
 
 .column-right {
-    @include media(desktop) {
+    @include govuk-media-query(desktop) {
         float: right;
     }
 }
@@ -56,26 +56,26 @@ header {
 }
 
 // layout for ie < 9
-$ie8-column-one-third: ( $site-width + $gutter ) / 3;
-$ie8-column-half: ( $site-width + $gutter ) / 2;
+$ie8-column-one-third: ( $site-width + $govuk-gutter ) / 3;
+$ie8-column-half: ( $site-width + $govuk-gutter ) / 2;
 $ie8-column-two-thirds: $ie8-column-one-third * 2;
 
 @mixin ie8-grid-column {
     float: left;
-    padding: 0 $gutter-half;
+    padding: 0 $govuk-gutter-half;
     box-sizing: content-box;
 }
 @mixin ie8-column-two-thirds {
     @include ie8-grid-column;
-    width: $ie8-column-two-thirds - $gutter;
+    width: $ie8-column-two-thirds - $govuk-gutter;
 }
 @mixin ie8-column-half {
     @include ie8-grid-column;
-    width: $ie8-column-half - $gutter;
+    width: $ie8-column-half - $govuk-gutter;
 }
 @mixin ie8-column-one-third {
     @include ie8-grid-column;
-    width: $ie8-column-one-third - $gutter;
+    width: $ie8-column-one-third - $govuk-gutter;
 }
 
 .lte-ie8 {
@@ -92,10 +92,10 @@ $ie8-column-two-thirds: $ie8-column-one-third * 2;
         width: $site-width;
         max-width: inherit;
         margin: 0 auto;
-        padding-bottom: 3*$gutter;
+        padding-bottom: 3*$govuk-gutter;
     }
     .grid-row {
-        width: $site-width + $gutter;
+        width: $site-width + $govuk-gutter;
     }
     .column-two-thirds {
         @include ie8-column-two-thirds;
@@ -103,10 +103,10 @@ $ie8-column-two-thirds: $ie8-column-one-third * 2;
             width: $ie8-column-two-thirds;
         }
         .column-two-thirds {
-            width: $ie8-column-two-thirds / 3 * 2 - $gutter;
+            width: $ie8-column-two-thirds / 3 * 2 - $govuk-gutter;
         }
         .column-one-third {
-            width: $ie8-column-two-thirds / 3 - $gutter;
+            width: $ie8-column-two-thirds / 3 - $govuk-gutter;
         }
     }
     .column-half {

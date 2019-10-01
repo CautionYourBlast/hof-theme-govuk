@@ -1,6 +1,6 @@
 .validation-summary {
-    padding-left: $gutter-half - $validation-bdr-size-lg;
-    padding-right: $gutter-half;
+    padding-left: $govuk-gutter-half - $validation-bdr-size-lg;
+    padding-right: $govuk-gutter-half;
     border-width: $validation-bdr-size-lg;
 
     &:focus {
@@ -18,14 +18,14 @@
         }
     }
     a {
-        @include bold-19;
+        @include govuk-font(19, $weight: bold);
     }
 }
 
 .validation-error {
     box-sizing: border-box;
-    padding-left: $gutter-half - $validation-bdr-size;
-    border-left: $validation-bdr-size-lg solid $error-colour;
+    padding-left: $govuk-gutter-half - $validation-bdr-size;
+    border-left: $validation-bdr-size-lg solid govuk-colour("red");
 
     &:focus {
         outline: $focus-outline;
@@ -38,14 +38,14 @@
 
 .error-message {
     display: block;
-    @include media(tablet) {
+    @include govuk-media-query(tablet) {
         margin-bottom: 0.5em;
     }
-    @include bold-19;
-    color: $error-colour;
+    @include govuk-font(19, $weight: bold);
+    color: govuk-colour("red");
 }
 
 .invalid-input,
 .validation-error .date-input {
-    border: $validation-bdr-size solid $error-colour;
+    border: $validation-bdr-size solid govuk-colour("red");
 }

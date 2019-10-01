@@ -8,8 +8,8 @@
   clear: both;
   border-left: 4px solid $border-colour;
 
-  padding: 10px 0 10px $gutter-half;
-  margin: ($gutter $gutter-half $gutter*1.5 0);
+  padding: 10px 0 10px $govuk-gutter-half;
+  margin: ($govuk-gutter $govuk-gutter-half $govuk-gutter*1.5 0);
 }
 
 .panel-indent legend {
